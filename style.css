@@ -83,6 +83,7 @@ p {
 	top: 60px;
 	right: 0px;
 	z-index: -1;
+	fill: var(--color01);
 }
 
 .home-info {
