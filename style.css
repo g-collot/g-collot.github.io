@@ -216,7 +216,7 @@ p {
 .about-img-container {
 	display: flex;
 	flex-wrap: wrap;
-	background: -webkit-linear-gradient(left top, var(--color01) 60%, var(--color01-alt2) 100%);
+	background: -webkit-linear-gradient(left top, var(--color01-alt) 60%, var(--color01) 100%);
 	border-radius: 50%;
 	padding: 0.5em;
 	width: 15em;
@@ -255,16 +255,38 @@ p {
 .project-article {
 	display: flex;
 	margin: auto;
-	background-color: var(--colorbg-alt);
 	border-radius: 9px;
-	max-width: 70vw;
 }
 
 .project-text {
+	padding: 1em;
+	padding-right: 5em;
 	text-align: center;
+	border-radius: 9px;
+	background-color: var(--colorbg-alt);
 	margin: 1em;
+	height: 50vh;
+	width: 40vw;
+	text-align: justify;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
 
+.project-media {
+	position: relative;
+	border-radius: 9px;
+	height: 50vh;
+	width: 40vw;
+	padding: 0.5em;
+	left: -5em;
+	background-color: var(--colorbg-alt2);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+}
+
+.project-media img {
+	width: inherit;
+	height: inherit;
+	max-width: fit-content;
+}
 .project-badge {
 	display: flex;
 	margin-top: 2em;
@@ -273,10 +295,6 @@ p {
 
 .project-badge img {
 	width: 3em;
-}
-.project-img img {
-	margin: 1em;
-	max-width: 50em;
 }
 
 #other {
@@ -288,20 +306,21 @@ p {
 }
 
 .end {
+	display: flex;
+	flex-direction: column;
 	background-color: var(--colorbg-alt);
 	border-radius: 9px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 30em;
+	max-width: 20vw;
 	margin: auto;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
 .end img {
-	width: 15em;
-	transform: rotate(30deg);
+	width: 10em;
 }
 
 footer {
