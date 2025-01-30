@@ -16,9 +16,11 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
 			rel="stylesheet" />
+		<link rel="preload" href="res/img/svg/icons.svg" as="image" />
 	</head>
 
 	<body>
+		<img style="display: none" alt="" src="res/img/svg/icons.svg" />
 		<header>
 			<div class="navbar-box">
 				<div class="navbar">
@@ -121,7 +123,9 @@
 			<h2>Ce que j'aime</h2>
 			<div class="like-main">
 				<div class="like-container">
-					<img class="like-img" src="res/img/javascript-svgrepo-com.svg" alt="JavaScript Icon" />
+					<svg>
+						<use xlink:href="res/img/svg/icons.svg#circle"></use>
+					</svg>
 					<h3 class="like-title">JavaScript</h3>
 					<p class="like-text">
 						C'est mon premier langage de programmation que j'ai utilisé, il me tiens donc chère.
@@ -129,7 +133,7 @@
 					</p>
 				</div>
 				<div class="like-container">
-					<img class="like-img" src="res/img/javascript-svgrepo-com.svg" alt="JavaScript Icon" />
+					<img class="like-img" src="res/img/javascript-svgrepo-com.svg" alt="BackEnd" />
 					<h3 class="like-title">BackEnd</h3>
 					<p class="like-text">
 						La partie cachée d'un programme est ce qu'il me passionne le plus, une fois plongé dans
@@ -137,7 +141,7 @@
 					</p>
 				</div>
 				<div class="like-container">
-					<img class="like-img" src="res/img/javascript-svgrepo-com.svg" alt="JavaScript Icon" />
+					<img class="like-img" src="res/img/javascript-svgrepo-com.svg" alt="SQL" />
 					<h3 class="like-title">SQL</h3>
 					<p class="like-text">
 						J'ai découvert les base de données avec mon BUT, j'ai pu me rendre compte que la

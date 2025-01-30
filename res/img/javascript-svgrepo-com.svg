@@ -5,6 +5,7 @@
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
 	.st1{fill:#F9F9F7;}
+	.svg-colorbg2{fill:black;}
 </style>
 <g>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="60.225" y1="192.3597" x2="742.5005" y2="610.3099">
@@ -14,7 +15,7 @@
 		<stop  offset="0.4346" style="stop-color:#AF2213"/>
 		<stop  offset="1" style="stop-color:#AE2012"/>
 	</linearGradient>
-	<circle class="st0" cx="400" cy="400.5" r="400"/>
+	<circle class="svg-colorbg2" cx="400" cy="400.5" r="400"/>
 	<path class="st1" d="M224.8,225.3v350.5h350.5V225.3H224.8z M415.5,498.6c0,34.1-20,49.6-49.2,49.6c-26.3,0-41.6-13.6-49.4-30.1
 		l26.8-16.2c5.2,9.2,9.9,16.9,21.2,16.9c10.8,0,17.6-4.2,17.6-20.7v-112h32.9V498.6z M493.4,548.3c-30.6,0-50.3-14.6-60-33.6
 		l26.8-15.5c7.1,11.5,16.2,20,32.5,20c13.6,0,22.3-6.8,22.3-16.2c0-11.3-8.9-15.3-24-21.9l-8.2-3.5c-23.8-10.1-39.5-22.8-39.5-49.6

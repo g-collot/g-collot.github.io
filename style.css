@@ -358,3 +358,7 @@ footer {
 .footer-container a:hover {
 	color: white;
 }
+
+.svg-colorbg {
+	fill: var(--color01-alt);
+}
