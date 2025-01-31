@@ -8,6 +8,11 @@
 	--colorbg: #242424;
 	--colorbg-alt: #383838;
 	--colorbg-alt2: #4e4e4e;
+	--color01-gradient: -webkit-linear-gradient(
+		left top,
+		var(--color01-alt) 60%,
+		var(--color01) 100%
+	);
 }
 /* https://colorffy.com/palettes/1QrpYsXlSIH2RWCpTU3T */
 /* https://colorffy.com/dark-theme-generator?colors=AE2012-242424 */
