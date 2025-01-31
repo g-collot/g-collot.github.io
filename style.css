@@ -15,12 +15,9 @@
 	);
 }
 
-.gradient-svg {
-	stop-color: var(--color01);
-}
-
-.gradient-svg-second {
-	stop-color: var(--color01-alt);
+#gradient-svg {
+	--stop-color-1: var(--color01);
+	--stop-color-2: var(var(--color01-alt));
 }
 
 /* https://colorffy.com/palettes/1QrpYsXlSIH2RWCpTU3T */
