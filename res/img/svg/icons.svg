@@ -22,7 +22,11 @@
 
 
   <symbol id="circle" viewBox="0 0 800 800">
-    <circle cx="400" cy="400" r="397.5" class="st0" style="stroke-width:.99375"/>
+    <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
+      <stop class="gradient-svg-second" offset="0"/>
+      <stop class="gradient-svg" offset="100%"/>
+    </linearGradient>
+    <circle fill="url(#gradient)" cx="400" cy="400" r="397.5"/>
   </symbol>
 </defs>
 </svg>
