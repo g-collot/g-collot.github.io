@@ -5,8 +5,8 @@
 	--color01: #ae2012;
 	--color01-alt: #bb402a;
 	--color01-alt2: #c75a42;
-	--colorbg: #242424;
-	--colorbg-alt: #383838;
+	--colorbg: #191919;
+	--colorbg-alt: #232323;
 	--colorbg-alt2: #4e4e4e;
 }
 
@@ -49,6 +49,7 @@ p {
 	height: 60px;
 	background-color: var(--colorbg-alt);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+	z-index: 1000;
 }
 
 .navbar {
@@ -280,9 +281,15 @@ p {
 	background-color: var(--colorbg-alt);
 	margin: 1em;
 	height: 40vh;
-	width: 40vw;
-	text-align: justify;
+	width: 33vw;
+	text-align: left;
+	line-height: 2em;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+}
+
+.project-text h3 {
+	font-size: 2em;
+	margin: 0px;
 }
 
 .project-media {
