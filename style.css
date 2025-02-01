@@ -109,6 +109,7 @@ p {
 	flex-direction: row;
 	justify-content: space-around;
 }
+
 .home-listContent {
 	display: flex;
 	flex-direction: column;
