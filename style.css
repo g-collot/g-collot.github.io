@@ -8,12 +8,8 @@
 	--colorbg: #242424;
 	--colorbg-alt: #383838;
 	--colorbg-alt2: #4e4e4e;
-	--color01-gradient: -webkit-linear-gradient(
-		left top,
-		var(--color01-alt) 60%,
-		var(--color01) 100%
-	);
 }
+
 #gradient-svg {
 	--color-stop-1: #a770ef;
 	--color-stop-2: #cf8bf3;
