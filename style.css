@@ -275,13 +275,14 @@ p {
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 2em;
-	padding-right: 6em;
+	padding-right: 8em;
 	text-align: center;
 	border-radius: 9px;
 	background-color: var(--colorbg-alt);
 	margin: 1em;
+	margin-left: 13em;
 	height: 40vh;
-	width: 33vw;
+	width: 37vw;
 	text-align: left;
 	line-height: 2em;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
@@ -293,13 +294,16 @@ p {
 }
 
 .project-media {
+	display: flex;
+	flex-direction: column;
 	position: relative;
+	justify-content: center;
 	border-radius: 9px;
 	height: 45vh;
 	width: 40vw;
 	padding: 0.5em;
-	top: -0.3em;
-	left: -5em;
+	top: -0.5em;
+	left: -8em;
 	background-color: var(--colorbg-alt2);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
@@ -312,10 +316,9 @@ p {
 
 .project-badge {
 	display: flex;
-	margin-top: 2em;
-	justify-content: space-around;
+	left: -7em;
 	position: relative;
-	top: 45vh;
+	z-index: 10000;
 }
 
 .project-badge svg {
@@ -338,16 +341,30 @@ p {
 	background-color: var(--colorbg-alt);
 	border-radius: 9px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	max-width: 20vw;
+	max-width: 15vw;
 	margin: auto;
 	margin-top: 2em;
 	margin-bottom: 2em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background: -webkit-linear-gradient(left top, var(--color01-alt) 30%, var(--color01) 100%);
 }
 
-.end img {
-	width: 10em;
+.end h2 {
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.end h3 {
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 0px;
+}
+.end svg {
+	fill: white;
+	width: 5em;
 }
 
 footer {
