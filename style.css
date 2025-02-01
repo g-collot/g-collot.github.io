@@ -302,14 +302,17 @@ p {
 	height: inherit;
 	max-width: fit-content;
 }
+
 .project-badge {
 	display: flex;
 	margin-top: 2em;
 	justify-content: space-around;
 }
 
-.project-badge img {
+.project-badge svg {
+	fill: var(--color01);
 	width: 3em;
+	height: 3em;
 }
 
 #other {
