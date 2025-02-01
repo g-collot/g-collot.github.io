@@ -7,7 +7,7 @@
 	--color01-alt2: #c75a42;
 	--colorbg: #191919;
 	--colorbg-alt: #232323;
-	--colorbg-alt2: #4e4e4e;
+	--colorbg-alt2: #303030;
 }
 
 /* https://colorffy.com/palettes/1QrpYsXlSIH2RWCpTU3T */
@@ -314,6 +314,8 @@ p {
 	display: flex;
 	margin-top: 2em;
 	justify-content: space-around;
+	position: relative;
+	top: 45vh;
 }
 
 .project-badge svg {
