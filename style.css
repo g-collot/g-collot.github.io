@@ -323,9 +323,9 @@ p {
 
 .project-badge svg {
 	fill: var(--color01);
-	width: 20px;
-	height: 20px;
-	margin: 1em;
+	width: 25px;
+	height: 25px;
+	margin-left: 0.5em;
 }
 
 #other {
