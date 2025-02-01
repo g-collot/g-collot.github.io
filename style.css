@@ -10,21 +10,6 @@
 	--colorbg-alt2: #4e4e4e;
 }
 
-#gradient-svg {
-	--color-stop-1: #a770ef;
-	--color-stop-2: #cf8bf3;
-	--color-stop-3: #fdb99b;
-}
-
-#gradient-svg2 {
-	--color-stop-1: #a770ef;
-	--color-stop-2: #cf8bf3;
-	--color-stop-3: #fdb99b;
-}
-
-.svg-gradient {
-	fill: url(#gradient-svg) gray;
-}
 /* https://colorffy.com/palettes/1QrpYsXlSIH2RWCpTU3T */
 /* https://colorffy.com/dark-theme-generator?colors=AE2012-242424 */
 /* https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
