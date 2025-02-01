@@ -311,8 +311,8 @@ p {
 
 .project-badge svg {
 	fill: var(--color01);
-	width: 5em;
-	height: 5em;
+	width: 100px;
+	height: 100px;
 }
 
 #other {
