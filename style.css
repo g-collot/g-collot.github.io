@@ -14,8 +14,13 @@
 		var(--color01) 100%
 	);
 }
-
 #gradient-svg {
+	--color-stop-1: #a770ef;
+	--color-stop-2: #cf8bf3;
+	--color-stop-3: #fdb99b;
+}
+
+#gradient-svg2 {
 	--color-stop-1: #a770ef;
 	--color-stop-2: #cf8bf3;
 	--color-stop-3: #fdb99b;
