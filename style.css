@@ -336,7 +336,6 @@ p {
 	display: flex;
 	left: -7em;
 	position: relative;
-	z-index: 10000;
 }
 
 .project-badge svg {
