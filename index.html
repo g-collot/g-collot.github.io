@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Collot Grégoire - Portefolio</title>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Collot Grégoire - Portefolio</title>
+
+		<link rel="stylesheet" href="style.scss" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -45,19 +47,19 @@
 				class="home-imgBG"
 				xmlns="http://www.w3.org/2000/svg"
 				xml:space="preserve"
-				viewBox="0 0 400 600"
+				viewBox="0 0 400 700"
 				aria-hidden="true"
 				focusable="false">
 				<path
-					d="m429.7-60.7-.2-.2c-.7-.6-1.4-1.1-2.2-1.4-.1 0-.2-.1-.3-.2h-.2c-.9-.3-1.8-.5-2.7-.5h-.6c-.3 0-.6 0-.9.1L83.2 5.1c-3.2.6-5.6 3.1-6.3 6.3L9 350.7c0 .3-.1.6-.1.9v.6c0 .9.2 1.8.5 2.7v.2c0 .1.1.2.2.3.3.8.8 1.6 1.4 2.2l.2.2.1.1 226.3 226.3c.1.1.2.1.3.2.4.4.8.7 1.3 1l.6.3c.4.2.8.4 1.3.5l.1.1c.2.1.4 0 .6.1.4.1.8.1 1.2.2.3 0 .6 0 .9-.1.3 0 .6 0 .9-.1l339.4-67.9.9-.3c.3-.1.6-.2.8-.3 1.7-.8 3.1-2.2 3.9-3.9.1-.3.2-.5.3-.8l.3-.9 67.9-339.4c0-.6.1-1.2.1-1.7 0-.4-.1-.8-.2-1.2 0-.2 0-.4-.1-.7l-.1-.1c-.1-.4-.3-.8-.5-1.2l-.3-.6c-.2-.3-.5-.7-.7-1-.2-.2-.3-.4-.5-.7L429.7-60.7z" />
+					d="m429.7-8.7-.2-.2c-.7-.6-1.4-1.1-2.2-1.4-.1 0-.2-.1-.3-.2h-.2c-.9-.3-1.8-.5-2.7-.5h-.6c-.3 0-.6 0-.9.1l-339.4 68c-3.2.6-5.6 3.1-6.3 6.3L9 402.7c0 .3-.1.6-.1.9v.6c0 .9.2 1.8.5 2.7v.2c0 .1.1.2.2.3.3.8.8 1.6 1.4 2.2l.2.2.1.1 226.3 226.3c.1.1.2.1.3.2.4.4.8.7 1.3 1l.6.3c.4.2.8.4 1.3.5l.1.1c.2.1.4 0 .6.1.4.1.8.1 1.2.2.3 0 .6 0 .9-.1.3 0 .6 0 .9-.1l339.4-67.9.9-.3c.3-.1.6-.2.8-.3 1.7-.8 3.1-2.2 3.9-3.9.1-.3.2-.5.3-.8l.3-.9 67.9-339.4c0-.6.1-1.2.1-1.7 0-.4-.1-.8-.2-1.2 0-.2 0-.4-.1-.7l-.1-.1c-.1-.4-.3-.8-.5-1.2l-.3-.6c-.2-.3-.5-.7-.7-1-.2-.2-.3-.4-.5-.7z" />
 			</svg>
 			<div class="home-info">
-				<p>Bonjour, je suis</p>
+				<h5>Bonjour, je suis</h5>
 				<h1>COLLOT GRÉGOIRE</h1>
-				<p class="home-under">ÉTUDIANT EN BUT INFORMATIQUE</p>
+				<h6>ÉTUDIANT EN BUT INFORMATIQUE</h6>
 				<div class="home-infoPanel">
 					<a href="res/files/COLLOT_Gregoire_CV.pdf" target="_blank" download style="flex-grow: 2">
-						<button class="button-24" type="button">Télécharger C.V.</button>
+						<button class="button-24" type="button"><h4>Télécharger C.V.</h4></button>
 					</a>
 					<div class="home-infoLink">
 						<a href="https://www.github.com/duschmolll" target="_blank">
@@ -94,14 +96,14 @@
 		</section>
 
 		<section id="like">
-			<h2>Ce que j'aime</h2>
+			<h3>Ce que j'aime</h3>
 			<div class="like-main">
 				<div class="like-container">
 					<svg class="like-img" fill="url(#gradient-svg)" aria-hidden="true" focusable="false">
 						<use xlink:href="res/svg/icons.svg#JS"></use>
 					</svg>
-					<h3 class="like-title">JavaScript</h3>
-					<p class="like-text">
+					<h3>JavaScript</h3>
+					<p>
 						C'est mon premier langage de programmation que j'ai utilisé, il me tiens donc chère.
 						Grâce à ce langage j'ai pu vraiment comprendre les possibilités de la programmation.
 					</p>
@@ -110,8 +112,8 @@
 					<svg class="like-img" fill="url(#gradient-svg)" aria-hidden="true" focusable="false">
 						<use xlink:href="res/svg/icons.svg#backEnd"></use>
 					</svg>
-					<h3 class="like-title">BackEnd</h3>
-					<p class="like-text">
+					<h3>BackEnd</h3>
+					<p>
 						La partie cachée d'un programme est ce qu'il me passionne le plus, une fois plongé dans
 						la mise en fonction d'un programme je ne vois plus le temps passé.
 					</p>
@@ -120,8 +122,8 @@
 					<svg class="like-img" fill="url(#gradient-svg)" aria-hidden="true" focusable="false">
 						<use xlink:href="res/svg/icons.svg#SQL"></use>
 					</svg>
-					<h3 class="like-title">SQL</h3>
-					<p class="like-text">
+					<h3>SQL</h3>
+					<p>
 						J'ai découvert les base de données avec mon BUT, j'ai pu me rendre compte que la
 						conception d'une base de données est très satisfaisant.
 					</p>
@@ -130,19 +132,18 @@
 		</section>
 
 		<section id="about">
-			<h2>À propos</h2>
+			<h3>À propos</h3>
 			<div class="about-bg"></div>
 			<div class="about-container">
 				<div class="about-img-container">
 					<img class="about-img-me" src="res/img/me2.png" alt="Photo of me" />
 				</div>
-				<div>
-					<p class="about-para">
+				<div class="about-para">
+					<p>
 						Au travers de mes différents emploies, j'ai toujours réussi à être astucieux sur les
 						problèmes rencontrés. Je suis aussi curieux, j'aime me renseigner sur des sujets niches
 						et de continuer à explorer cette connaissance.
-					</p>
-					<p class="about-para">
+						<br /><br />
 						Actuellement en étude supérieure à l'IUT de Maubeuge en BUT Informatique, je suis à la
 						recherche d'une entreprise afin de réaliser ma deuxième et troisième année en
 						alternance. Passioné par le monde Informatique depuis mon plus jeune âge, cette
@@ -154,11 +155,11 @@
 		</section>
 
 		<section id="project">
-			<h2>Projets & Réalisations</h2>
+			<h3>Projets & Réalisations</h3>
 
 			<article class="project-article">
 				<div class="project-text">
-					<h3>Réalisation d'un site web</h3>
+					<h2>Réalisation d'un site web</h2>
 					<p>
 						J’ai découvert la programmation grâce au cours de mathématiques au lycée, mon premier
 						programme fut de créer le Juste Prix sur ma calculette. Au fur à mesure cette découverte
@@ -187,7 +188,7 @@
 
 			<article class="project-article">
 				<div class="project-text">
-					<h3>LiDarts - Logiciel de partie de flechettes.</h3>
+					<h2>LiDarts - Logiciel de partie de flechettes.</h2>
 					<p>
 						Étant fan de fléchettes, j'ai utilisé des applications pour réaliser des parties chez
 						moi entre-amis. J'ai toujours trouvé ses applications manquai de nouveauté par rapport
@@ -211,7 +212,7 @@
 
 			<article class="project-article">
 				<div class="project-text">
-					<h3>Réalisation de ce portfolio</h3>
+					<h2>Réalisation de ce portfolio</h2>
 					<p>
 						J'ai pu me replonger dans la création d'une page web avec la création de mon portefolio
 						virtuel. Grâce à cette réalisation j'ai pu apprendre l'implémentation des fichiers SVG à
@@ -238,10 +239,10 @@
 		</section>
 
 		<section id="studies">
-			<h2>Universitaire</h2>
+			<h3>Universitaire</h3>
 			<article class="project-article">
 				<div class="project-text">
-					<h3>Comparaison d'approches algorithmiques</h3>
+					<h2>Comparaison d'approches algorithmiques</h2>
 					<p>
 						Dans ce projet, il nous étai demandé de réaliser une méthode comparative afin de
 						démontrer lesquels de nos implémentation algorithmiques est le plus performant. Nous
@@ -264,10 +265,10 @@
 		</section>
 
 		<section id="other">
-			<h2>Autre</h2>
+			<h3>Autre</h3>
 			<article class="project-article">
 				<div class="project-text">
-					<h3>Menuiserie</h3>
+					<h2>Menuiserie</h2>
 					<p>
 						Dans mes passes temps, j'aime réaliser divers projets manuel. C'est pour cela que j'ai à
 						deux reprise eu l'idée de réaliser des meubles pour mon appartement. Le premier fut la
@@ -292,7 +293,7 @@
 					<use xlink:href="res/svg/icons.svg#handshake"></use>
 				</svg>
 				<h2>Merci</h2>
-				<h3>Collaborons ensemble</h3>
+				<h5>Collaborons ensemble</h5>
 			</div>
 		</section>
 
