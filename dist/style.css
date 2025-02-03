@@ -37,29 +37,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 0.64rem + 2.2666666667vw, 2rem);
   margin: 0px;
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
-h6 {
-  font-size: 1.78rem;
-  font-size: clamp(1.78rem, 1.53rem + 1.25vw, 2.28rem);
-  margin: 0px;
-  font-weight: normal;
-}
-
 h3 {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.5rem);
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.02rem + 0.8vw, 1.5rem);
   text-align: center;
 }
 
 h4 {
-  font-size: 0.5rem;
-  font-size: clamp(0.5rem, 0.25rem + 1.25vw, 1rem);
+  font-size: 0.6rem;
+  font-size: clamp(0.6rem, 0.36rem + 1.0666666667vw, 1rem);
   text-align: center;
   font-weight: 800;
   padding: 0.5rem 0.4rem;
@@ -68,15 +61,22 @@ h4 {
 
 h5 {
   font-size: 0.8rem;
-  font-size: clamp(0.8rem, 0.55rem + 1.25vw, 1.3rem);
+  font-size: clamp(0.8rem, 0.5rem + 1.3333333333vw, 1.3rem);
+  margin: 0px;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1.18rem;
+  font-size: clamp(1.18rem, 0.52rem + 2.9333333333vw, 2.28rem);
   margin: 0px;
   font-weight: normal;
 }
 
 p {
   margin: 0%;
-  font-size: 0.5rem;
-  font-size: clamp(0.5rem, 0.25rem + 1.25vw, 1rem);
+  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.68rem + 0.5333333333vw, 1rem);
 }
 
 .navbar-box {
@@ -107,7 +107,6 @@ p {
   margin-left: 2em;
   color: white;
   font-weight: normal;
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -488,8 +487,6 @@ footer {
   align-items: center;
   width: 80vw;
   margin: 0%;
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
 }
 
 .footer-container a {
@@ -499,7 +496,7 @@ footer {
 
 .footer-container p {
   font-size: 0.65rem;
-  font-size: clamp(0.7rem, 0.45rem + 1.25vw, 1.2rem);
+  font-size: clamp(0.65rem, 0.32rem + 1.4666666667vw, 1.2rem);
 }
 
 .footer-container a:hover {
