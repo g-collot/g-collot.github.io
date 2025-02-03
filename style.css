@@ -31,7 +31,7 @@ body {
 /* Buttons: https://codepen.io/yuhomyan/pen/LYNVVNO */
 h1 {
   font-size: 2rem;
-  font-size: clamp(2rem, 1rem + 5vw, 4rem);
+  font-size: clamp(2rem, 1.3333333333rem + 2.962962963vw, 4rem);
   margin: 0px;
   font-weight: normal;
 }
@@ -68,7 +68,7 @@ h5 {
 
 h6 {
   font-size: 1.18rem;
-  font-size: clamp(1.18rem, 0.52rem + 2.9333333333vw, 2.28rem);
+  font-size: clamp(1.18rem, 0.8133333333rem + 1.6296296296vw, 2.28rem);
   margin: 0px;
   font-weight: normal;
 }
@@ -125,7 +125,7 @@ p {
   margin-bottom: 15vh;
   scroll-margin-top: 125px;
 }
-@media (width >= 40em) {
+@media (width >= 60em) {
   #home {
     flex-direction: row;
     justify-content: space-between;
@@ -139,7 +139,7 @@ p {
   margin-bottom: 0.1em;
   font-weight: 900;
 }
-@media (width >= 40em) {
+@media (width >= 60em) {
   #home h1 {
     margin: 0%;
   }
@@ -162,6 +162,12 @@ p {
 }
 @media (width >= 40em) {
   .home-info {
+    margin-top: 5em;
+  }
+}
+@media (width >= 60em) {
+  .home-info {
+    margin-top: 0em;
     text-align: left;
     align-items: flex-start;
   }
@@ -291,6 +297,14 @@ p {
 }
 @media (width >= 40em) {
   .about-img-container {
+    width: 20%;
+    padding: 0.5em;
+    margin: 0;
+    margin-left: 10vw;
+  }
+}
+@media (width >= 60em) {
+  .about-img-container {
     width: 13%;
     padding: 0.5em;
     margin: 0;
@@ -308,6 +322,12 @@ p {
   text-align: justify;
 }
 @media (width >= 40em) {
+  .about-para {
+    width: 50%;
+    padding-left: 10vw;
+  }
+}
+@media (width >= 60em) {
   .about-para {
     width: 33vw;
     padding-left: 10vw;
@@ -329,7 +349,7 @@ p {
   margin: auto;
   border-radius: 9px;
 }
-@media (width >= 40em) {
+@media (width >= 70em) {
   .project-article {
     flex-direction: row;
   }
@@ -349,13 +369,12 @@ p {
   line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
-@media (width >= 40em) {
+@media (width >= 70em) {
   .project-text {
     margin-left: 13em;
     height: 40vh;
     width: 37vw;
     padding-right: 8em;
-    height: 40vh;
     order: 0;
   }
 }
@@ -373,7 +392,7 @@ p {
   background-color: var(--colorbg-alt2);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
-@media (width >= 40em) {
+@media (width >= 70em) {
   .project-media {
     position: relative;
     align-self: flex-end;
@@ -398,7 +417,7 @@ p {
   background-color: var(--colorbg-alt2);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 }
-@media (width >= 40em) {
+@media (width >= 70em) {
   .project-mediaB {
     position: relative;
     align-self: flex-end;
@@ -414,12 +433,13 @@ p {
 .project-mediaB img {
   width: 100%;
   height: auto;
+  border-radius: 9px;
 }
 
 .project-badge {
   display: none;
 }
-@media (width >= 40em) {
+@media (width >= 70em) {
   .project-badge {
     display: flex;
     left: -7em;

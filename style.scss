@@ -33,7 +33,7 @@ body {
 
 h1 {
 	font-size: 2rem;
-	font-size: clamp(2rem, 1rem + 5vw, 4rem);
+	font-size: clamp(2rem, 1.3333333333333333rem + 2.9629629629629632vw, 4rem);
 	margin: 0px;
 	font-weight: normal;
 }
@@ -70,7 +70,7 @@ h5 {
 
 h6 {
 	font-size: 1.18rem;
-	font-size: clamp(1.18rem, 0.5199999999999999rem + 2.933333333333333vw, 2.28rem);
+	font-size: clamp(1.18rem, 0.8133333333333332rem + 1.6296296296296295vw, 2.28rem);
 	margin: 0px;
 	font-weight: normal;
 }
@@ -126,7 +126,7 @@ p {
 	margin-bottom: 15vh;
 	scroll-margin-top: 125px;
 
-	@media (width >= 40em) {
+	@media (width >= 60em) {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 80%;
@@ -139,7 +139,7 @@ p {
 	margin-bottom: 0.1em;
 	font-weight: 900;
 
-	@media (width >= 40em) {
+	@media (width >= 60em) {
 		margin: 0%;
 	}
 }
@@ -158,7 +158,13 @@ p {
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
+
 	@media (width >= 40em) {
+		margin-top: 5em;
+	}
+
+	@media (width >= 60em) {
+		margin-top: 0em;
 		text-align: left;
 		align-items: flex-start;
 	}
@@ -284,6 +290,13 @@ p {
 	margin: auto;
 
 	@media (width >= 40em) {
+		width: 20%;
+		padding: 0.5em;
+		margin: 0;
+		margin-left: 10vw;
+	}
+
+	@media (width >= 60em) {
 		width: 13%;
 		padding: 0.5em;
 		margin: 0;
@@ -301,6 +314,11 @@ p {
 	text-align: justify;
 
 	@media (width >= 40em) {
+		width: 50%;
+		padding-left: 10vw;
+	}
+
+	@media (width >= 60em) {
 		width: 33vw;
 		padding-left: 10vw;
 	}
@@ -320,7 +338,8 @@ p {
 	flex-direction: column;
 	margin: auto;
 	border-radius: 9px;
-	@media (width >= 40em) {
+
+	@media (width >= 70em) {
 		flex-direction: row;
 	}
 }
@@ -339,12 +358,11 @@ p {
 	line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 
-	@media (width >= 40em) {
+	@media (width >= 70em) {
 		margin-left: 13em;
 		height: 40vh;
 		width: 37vw;
 		padding-right: 8em;
-		height: 40vh;
 		order: 0;
 	}
 }
@@ -362,7 +380,7 @@ p {
 	background-color: var(--colorbg-alt2);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 
-	@media (width >= 40em) {
+	@media (width >= 70em) {
 		position: relative;
 		align-self: flex-end;
 		top: 1em;
@@ -386,7 +404,7 @@ p {
 	background-color: var(--colorbg-alt2);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 
-	@media (width >= 40em) {
+	@media (width >= 70em) {
 		position: relative;
 		align-self: flex-end;
 		top: -0.5em;
@@ -401,12 +419,13 @@ p {
 .project-mediaB img {
 	width: 100%;
 	height: auto;
+	border-radius: 9px;
 }
 
 .project-badge {
 	display: none;
 
-	@media (width >= 40em) {
+	@media (width >= 70em) {
 		display: flex;
 		left: -7em;
 		position: relative;
