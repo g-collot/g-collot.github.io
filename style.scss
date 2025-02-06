@@ -329,11 +329,15 @@ p {
 #other {
 	display: flex;
 	margin: auto;
-	width: 80%;
+	width: 100%;
 	margin-top: 5em;
 	flex-direction: column;
 	gap: 4em;
 	scroll-margin-top: 75px;
+
+	@media (width >= 60em) {
+		width: 80%;
+	}
 }
 
 #project p,
@@ -385,10 +389,13 @@ p {
 }
 
 .project-text-container {
-	width: 75%;
+	width: 100%;
 	line-height: 2rem;
 	line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
 
+	@media (width >= 70em) {
+		width: 75%;
+	}
 	@media (width >= 90em) {
 		width: 85%;
 	}
