@@ -335,12 +335,22 @@ p {
 }
 
 #project,
-#studies {
+#studies,
+#other {
   display: flex;
+  margin: auto;
+  width: 80%;
   margin-top: 5em;
   flex-direction: column;
   gap: 4em;
   scroll-margin-top: 75px;
+}
+
+#project p,
+#studies p,
+#other p {
+  min-height: 250px;
+  text-align: justify;
 }
 
 .project-article {
@@ -351,7 +361,10 @@ p {
 }
 @media (width >= 70em) {
   .project-article {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 170px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
   }
 }
 
@@ -371,11 +384,24 @@ p {
 }
 @media (width >= 70em) {
   .project-text {
-    margin-left: 13em;
-    height: 40vh;
-    width: 37vw;
-    padding-right: 8em;
-    order: 0;
+    display: block;
+    grid-area: 1/1/auto/3;
+    min-height: 350px;
+    padding: 50px;
+    border-radius: 9px;
+    background-color: var(--colorbg-alt);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+  }
+}
+
+.project-text-container {
+  width: 75%;
+  line-height: 2rem;
+  line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+}
+@media (width >= 90em) {
+  .project-text-container {
+    width: 85%;
   }
 }
 
@@ -394,13 +420,15 @@ p {
 }
 @media (width >= 70em) {
   .project-media {
+    grid-area: 1/2/auto/4;
     position: relative;
-    align-self: flex-end;
-    top: 1em;
-    left: -8em;
-    width: 40vw;
-    height: 45vh;
-    margin: 0em;
+    right: -5%;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -408,7 +436,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: static;
   border-radius: 9px;
   padding: 0.5em;
   width: calc(100% - 3em);
@@ -419,13 +446,15 @@ p {
 }
 @media (width >= 70em) {
   .project-mediaB {
+    grid-area: 1/2/auto/4;
     position: relative;
-    align-self: flex-end;
-    top: -0.5em;
-    left: -8em;
-    height: 45vh;
-    width: 40vw;
-    margin: 0em;
+    right: -5%;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -442,8 +471,6 @@ p {
 @media (width >= 70em) {
   .project-badge {
     display: flex;
-    left: -7em;
-    position: relative;
   }
 }
 
@@ -451,15 +478,7 @@ p {
   fill: var(--color01);
   width: 25px;
   height: 25px;
-  margin-left: 0.5em;
-}
-
-#other {
-  display: flex;
-  margin-top: 5em;
-  flex-direction: column;
-  gap: 3em;
-  scroll-margin-top: 75px;
+  margin: 10px 0 0 10px;
 }
 
 .end {

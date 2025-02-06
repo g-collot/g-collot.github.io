@@ -168,8 +168,6 @@ p {
 
 	@media (width >= 70em) {
 		display: flex;
-		left: -7em;
-		position: relative;
 	}
 }
 
@@ -177,5 +175,5 @@ p {
 	fill: var(--color01);
 	width: 25px;
 	height: 25px;
-	margin-left: 0.5em;
+	margin: 10px 0 0 10px;
 }
