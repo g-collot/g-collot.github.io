@@ -121,14 +121,13 @@ p {
   margin: auto;
   margin-top: 125px;
   width: 100%;
-  height: calc(-150px + 80vh);
+  height: calc(-125px + 80vh);
   margin-bottom: 15vh;
   scroll-margin-top: 125px;
 }
 @media (width >= 60em) {
   #home {
     flex-direction: row;
-    height: calc(-125px + 80vh);
     justify-content: space-between;
     width: 80%;
   }
@@ -227,6 +226,10 @@ p {
 
 .button-24:active {
   opacity: 0.5;
+}
+
+#like h3 {
+  margin-bottom: 2em;
 }
 
 .like-main {
