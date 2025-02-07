@@ -122,12 +122,13 @@ p {
 	margin: auto;
 	margin-top: 125px;
 	width: 100%;
-	height: calc(-125px + 80vh);
+	height: calc(-150px + 80vh);
 	margin-bottom: 15vh;
 	scroll-margin-top: 125px;
 
 	@media (width >= 60em) {
 		flex-direction: row;
+		height: calc(-125px + 80vh);
 		justify-content: space-between;
 		width: 80%;
 	}
@@ -262,6 +263,10 @@ p {
 	scroll-margin-top: 100px;
 }
 
+#about h3 {
+	margin-bottom: 2em;
+}
+
 .about-bg {
 	position: absolute;
 	left: 0px;
@@ -329,7 +334,7 @@ p {
 #other {
 	display: flex;
 	margin: auto;
-	width: 100%;
+	width: 95%;
 	margin-top: 5em;
 	flex-direction: column;
 	gap: 4em;
@@ -343,15 +348,21 @@ p {
 #project p,
 #studies p,
 #other p {
-	min-height: 250px;
+	min-height: 0px;
 	text-align: justify;
+	margin-bottom: 1em;
+
+	@media (width >= 70em) {
+		min-height: 250px;
+		margin: 0;
+	}
 }
 
 .project-article {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	margin: auto;
-	border-radius: 9px;
+	-moz-box-align: center;
+	align-items: center;
 
 	@media (width >= 70em) {
 		display: grid;
@@ -363,17 +374,15 @@ p {
 }
 
 .project-text {
-	display: flex;
-	flex-direction: column;
-	padding: 2em;
-	text-align: center;
+	padding: 25px;
+
 	order: 1;
+
 	border-radius: 9px;
 	background-color: var(--colorbg-alt);
-	margin: 1em;
+	margin: 1em 0 0 0;
 	text-align: left;
-	line-height: 2rem;
-	line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 
 	@media (width >= 70em) {
@@ -390,6 +399,7 @@ p {
 
 .project-text-container {
 	width: 100%;
+
 	line-height: 2rem;
 	line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
 
@@ -402,17 +412,7 @@ p {
 }
 
 .project-media {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	position: static;
-	border-radius: 9px;
-	padding: 0.5em;
-	width: calc(100% - 3em);
-	margin: 1em;
-	margin-bottom: 0em;
-	background-color: var(--colorbg-alt2);
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
 
 	@media (width >= 70em) {
 		grid-area: 1 / 2 / auto / 4;
@@ -429,17 +429,7 @@ p {
 }
 
 .project-mediaB {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	border-radius: 9px;
-	padding: 0.5em;
-	width: calc(100% - 3em);
-	margin: 1em;
-	margin-bottom: 0em;
-	background-color: var(--colorbg-alt2);
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+	position: static;
 
 	@media (width >= 70em) {
 		grid-area: 1 / 2 / auto / 4;
