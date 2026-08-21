@@ -4,7 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Collot Grégoire - Portfolio</title>
-
+		<script>
+			(function () {
+				const saved = localStorage.getItem('theme');
+				const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
+		</script>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +26,6 @@
 			rel="stylesheet" />
 		<link rel="preload" href="res/svg/icons.svg" as="image" />
 	</head>
-
 	<body>
 		<svg style="width: 0; height: 0; position: absolute" aria-hidden="true" focusable="false">
 			<linearGradient id="gradient-svg" gradientTransform="rotate(210, 0.5, 0.5)">
@@ -31,13 +36,23 @@
 		<header>
 			<div class="navbar-box">
 				<div class="navbar">
-					<img src="res/favicon/favicon-96x96.png" alt="logo" width="35" height="35" />
-					<a href="#home">home</a>
-					<a href="#about">à propos</a>
-					<a href="#work">projets</a>
-					<!-- <a href="#studies">universitaire</a>
-					<a href="#other">autre</a>
-					<a href="index.html#contact">contact</a> -->
+					<div class="navbar-left">
+						<img src="res/favicon/favicon-96x96.png" alt="logo" width="35" height="35" />
+						<a href="#home">home</a>
+						<a href="#about">à propos</a>
+						<a href="#work">projets</a>
+						<!-- <a href="#studies">universitaire</a>
+									<a href="#other">autre</a>
+									<a href="index.html#contact">contact</a> -->
+				
+					</div>
+					<div class="navbar-right">
+						<button id="theme-toggle" type="button" aria-label="Basculer le thème clair/sombre">
+							<svg aria-hidden="true" focusable="false">
+								<use xlink:href="res/svg/icons.svg#saturn-color"></use>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -455,5 +470,6 @@
 				</p>
 			</div>
 		</footer>
+		<script src="theme-toggle.js"></script>
 	</body>
 </html>
