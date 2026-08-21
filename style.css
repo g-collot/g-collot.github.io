@@ -342,6 +342,7 @@ p {
   }
 }
 
+#work,
 #project,
 #studies,
 #other {
@@ -354,6 +355,7 @@ p {
   scroll-margin-top: 75px;
 }
 @media (width >= 60em) {
+  #work,
   #project,
   #studies,
   #other {
@@ -361,6 +363,7 @@ p {
   }
 }
 
+#work p,
 #project p,
 #studies p,
 #other p {
@@ -369,6 +372,7 @@ p {
   margin-bottom: 1em;
 }
 @media (width >= 70em) {
+  #work p,
   #project p,
   #studies p,
   #other p {
@@ -474,15 +478,21 @@ p {
 }
 @media (width >= 70em) {
   .project-badge {
-    display: flex;
+    display: flex;   
+    width: fit-content;     
+    /* background-color: var(--colorbg-alt2); */
+    border-radius: 9px;
+    padding: 0.2em 0.5em; 
+    align-items: center;
+    gap: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; */
   }
 }
 
 .project-badge svg {
-  fill: var(--color01);
+  /* fill: var(--color01); */
   width: 25px;
   height: 25px;
-  margin: 3px 0 0 10px;
 }
 
 .end {
