@@ -113,10 +113,10 @@ p {
 .navbar-left {
   display: flex;
   align-items: center;
+  gap: 2em;
 }
 
 .navbar-left a {
-  margin-left: 2em;
   color: var(--color-text);
   font-weight: normal;
   text-decoration: none;
@@ -130,12 +130,23 @@ p {
   display: flex;
   justify-content: end;
   height: 50px;
+  gap: 2em;
 }
+
 .navbar-right button {
   border: none;
   background: none;
   padding: 0;
   cursor: pointer;
+}
+.navbar-right #lang-toggle {
+  margin-left: 2em;
+  color: var(--color-text);
+  font-weight: normal;
+  text-decoration: none;
+}
+.navbar-right #lang-toggle:hover {
+  color: var(--color01);
 }
 .navbar-right svg {
   height: 50px;

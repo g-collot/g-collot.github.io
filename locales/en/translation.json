@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "pageTitle": "Collot Grégoire - Portfolio"
+  },
+  "nav": {
+    "home": "home",
+    "about": "about me",
+    "work": "projects",
+    "themeToggleAria": "Switch light/dark theme",
+    "langToggle": "fr"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "name": "COLLOT GRÉGOIRE",
+    "role": "STUDENT IN COMPUTER SCIENCE",
+    "cvButton": "Download C.V.",
+    "code": {
+      "line1": "1&ensp;class <b>Person</b>:",
+      "line2": "2&ensp;&emsp;def __init__(self):",
+      "line3": "3&ensp;&emsp;&emsp;self.name = \"<b>Grégoire COLLOT</b>\"",
+      "line4": "4&ensp;&emsp;&emsp;self.traits = (\"<b>DEV</b>\", \"<b>CURIOUS</b>\")",
+      "line5": "5&ensp;&emsp;&emsp;self.age = date.today().year - 1996",
+      "line6": "6&ensp;&emsp;&emsp;self.available = <b>True</b>"
+    }
+  },
+  "like": {
+    "title": "Things I love",
+    "first": {
+      "title": "JavaScript",
+      "desc": "C'est le premier langage de programmation que j'ai utilisé, il me tient tout particulièrement à cœur. C'est grâce à ce langage que j'ai pu vraiment comprendre les possibilités de la programmation informatique."
+    },
+    "second": {
+      "title": "BackEnd",
+      "desc": "La partie cachée d'un programme est ce qui me passionne le plus. Une fois plongé dans la mise en place d'un programme, je ne vois plus le temps passer."
+    },
+    "third": {
+      "title": "SQL",
+      "desc": "J'ai découvert les bases de données avec mon BUT et cela m'a permis de me rendre compte que leur conception est très satisfaisante."
+    }
+  },
+  "about": {
+    "title": "About me",
+    "text": "My experiences in different fields have allowed me to develop and sharpen my ability to adapt to different situations and solve various problems. I'm also curious, I like to focus on niche interests while increasing my knowledge.<br><br>Furthermore, during my time as an application manager at the University of Lille, I was able to develop my technical knowledge across a wide range of areas. During my two years with them, I discovered how computer science is applied throughout the maintenance, evolution and deployment of a multitude of services.<br><br>Currently in my third year of studies at the University Institute of Technology of Maubeuge in computer science, I'm looking for a company to support me throughout the next three years of my studies, as I pursue an engineering degree in cybersecurity at the National Institute of Applied Sciences of Valenciennes. Having been passionate about computers from a young age, this apprenticeship would allow me to pursue one of my primordial career goals."
+  },
+  "work": {
+    "title": "Work",
+    "opi": {
+      "title": "OPI Engine",
+      "desc": "The Pre-Registration Operations engine is one of the key components ensuring the smooth running of student registration at the University of Lille. It gathers applications from more than 70 external sources (Parcoursup, eCandidat, Mon Master, ...), centralizes and transforms the data, and sends it to our school management software, Apogée. <br> <br> We implemented CI/CD, an Oracle database with triggers and stored procedures, a migration system using Vault, and internal APIs. We also improved and maintained the PHP part of the engine."
+    }
+  },
+  "studies": {
+    "title": "University",
+    "absence": {
+      "title": "Absence Manager",
+      "desc": "The goal was to create a web-based absence management system for a school. Four roles were required for proper administration: secretary, teacher, student, and pedagogical administrator. Required features included a detailed history, statistical pages, and automated reminders through an email API."
+	},
+    "algo": {
+      "title": "Comparison of algorithmic approaches",
+      "desc": "In this project, we needed to implement a comparative method to identify the quickest and most efficient algorithm for solving a game of Mastermind. Python was used to create the GUI and provide an easy way to compare multiple algorithms."
+    }
+  },
+  "project": {
+    "title": "Side-project",
+    "proxmox": {
+      "title": "Selfhost - Proxmox",
+      "desc": "I decided to explore home automation and, in looking for a self-hosted solution, discovered a whole new world. I set up a Proxmox server to host Home Assistant, and after observing the possibilities of self-hosting, I started exploring other services that could tickle my curiosity. Nginx, Headscale, and AdGuard soon followed."
+	  },
+    "web": {
+      "title": "The first step in web development",
+      "desc": "First project in web development, I made a dedicated page to learn the different recipes of salted crepes proposed by Crep'Eat fast food restaurant. There was also a Wordle game. This website was really the first step in computer science, from the front end with basic HTML and CSS to the back end with JavaScript."
+    },
+    "lidarts": {
+      "title": "Lidarts - Dart Party Software",
+      "desc": "As a fan of darts, I love playing some games with friends at my home. To do so, I've used a lot of different dart scorer software, and I've always found some mechanics missing. I've decided to realise my own dart scorer using Godot. It will include multiple game modes that are missing from common dart scorers. Named Lidarts after Lichess' open-source and crowdfunding philosophy.<br>Work in progress."
+    },
+    "portfolio": {
+      "title": "Developing this portfolio",
+      "desc": "Creating this digital portfolio allowed me to get back into web development. I was able to understand the utility of SASS, implement SVGs in a compact way, add responsive and accessible design, and translate the page with i18n."
+    }
+  },
+  "other": {
+    "title": "Miscellaneous",
+    "menuiserie": {
+      "title": "Woodworking",
+      "desc": "I love working on diverse manual labor projects. I've made two pieces of furniture for my living room. The first one was made from recycled wooden wine boxes to make a cozy TV stand. The second was a wooden wall-mounted cabinet to hide a dartboard inside. Those miscellaneous projects help me discover new ways of thinking and new possibilities in the world around me."
+    }
+  },
+  "end": {
+    "title": "Thanks",
+    "subtitle": "Let's collaborate"
+  },
+  "footer": {
+    "text": "Inspired by Anurag Hazra, made by <a href=\"https://linkedin.com/in/gr%C3%A9goirecollot\" target=\"_blank\"><b>Collot Grégoire</b></a>"
+  }
+}

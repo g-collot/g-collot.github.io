@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "pageTitle": "Collot Grégoire - Portfolio"
+  },
+  "nav": {
+    "home": "home",
+    "about": "à propos",
+    "work": "projets",
+    "themeToggleAria": "Basculer le thème clair/sombre",
+    "langToggle": "en"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis",
+    "name": "COLLOT GRÉGOIRE",
+    "role": "ÉTUDIANT EN BUT INFORMATIQUE",
+    "cvButton": "Télécharger C.V.",
+    "code": {
+      "line1": "1&ensp;class <b>Personne</b>:",
+      "line2": "2&ensp;&emsp;def __init__(self):",
+      "line3": "3&ensp;&emsp;&emsp;self.nom = \"<b>Grégoire COLLOT</b>\"",
+      "line4": "4&ensp;&emsp;&emsp;self.traits = (\"<b>DEV</b>\", \"<b>CURIEUX</b>\")",
+      "line5": "5&ensp;&emsp;&emsp;self.age = date.today().year - 1996",
+      "line6": "6&ensp;&emsp;&emsp;self.disponible = <b>True</b>"
+    }
+  },
+  "like": {
+    "title": "Ce que j'aime",
+    "first": {
+      "title": "JavaScript",
+      "desc": "C'est le premier langage de programmation que j'ai utilisé, il me tient tout particulièrement à cœur. C'est grâce à ce langage que j'ai pu vraiment comprendre les possibilités de la programmation informatique."
+    },
+    "second": {
+      "title": "BackEnd",
+      "desc": "La partie cachée d'un programme est ce qui me passionne le plus. Une fois plongé dans la mise en place d'un programme, je ne vois plus le temps passer."
+    },
+    "third": {
+      "title": "SQL",
+      "desc": "J'ai découvert les bases de données avec mon BUT et cela m'a permis de me rendre compte que leur conception est très satisfaisante."
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "text": "Mes différents emplois m'ont permis de développer et affiner ma capacité d'adaptabilité et de résolution de problèmes. Je suis aussi curieux, j'aime me renseigner sur des sujets niches et continuer à explorer ces connaissances.<br><br>De plus, en tant que gestionnaire applicatifs auprès de l'Université de Lille, j'ai pu accroite mes connaissances techniques de façon très diverses. A travers mes deux ans, j'ai pu découvrir le monde du travail en informatique dont la maintenance applicatives, le développement et l'éveolution suite a des demandes clients mais aussi la mise en ligne de services.<br><br>Actuellement en troisième année d'études supérieures à l'IUT de Maubeuge en BUT Informatique, je suis à la recherche d'une entreprise afin de réaliser mes trois années en Ingénieur spécialité Informatique et Cybersécurité auprès de l'INSA de Valenciennes. Passionné par le monde Informatique depuis mon plus jeune âge, cette formation me permettrait de réaliser un objectif primordial pour ma vie professionnelle."
+  },
+  "work": {
+    "title": "Professionnel",
+    "opi": {
+      "title": "Moteur OPI",
+      "desc": "Le moteur aux Opérations Préalable à l'Inscription, est une clé maîtresse au bon déroulement des inscriptions pour les étudiants auprès de l'Université de Lille. Ce moteur permet de récupérer tous les étudiants et vœux venant de 70 sources différentes (Parcoursup, eCandidat, monMaster, …), de les centraliser et de réaliser des transformations afin de les envoyer dans Apogée une fois conformes.<br><br>Nous avons mis en place : un CI/CD, une base de données Oracle avec avec des triggers et des procédures stockés, système de migration, utilisation de Vault, developper et maintenir la partie PHP, mise en place et utilisations de web services."
+    }
+  },
+  "studies": {
+    "title": "Universitaire",
+    "absence": {
+      "title": "Gestionnaire d'absence",
+      "desc": "Le but de ce projet est de réaliser un service web de gestion d'absence pour les établissements scolaire. Il faut mettre en place la gestion pour 4 rôles : secrétaire, enseignant, étudiant et responsable pédagogique. Un historique détaillés, des statistiques et des rappels par mail automatique ont été intégrés."
+    },
+    "algo": {
+      "title": "Comparaison d'approches algorithmiques",
+      "desc": "Dans ce projet, nous devions réaliser une méthode comparative afin de démontrer laquelle de nos implémentations algorithmiques fut la plus performante. Nous nous sommes basés sur un jeu de Mastermind codé sous Python afin de mettre en place plusieurs méthodes de résolution de parties pour pouvoir les comparer entre elles à travers différentes variables."
+    }
+  },
+  "project": {
+    "title": "Personnel",
+    "proxmox": {
+      "title": "Hébergement de service - Proxmox",
+      "desc": "Souhaitant mettre en place de la domotique, j'ai regardé pour une solution d'herbegement local. J'ai mis en place un serveur Proxmox afin d'utiliser Home Assistant. Suite à la découverte du fonctionnement de l'hebergement, j'ai pu mettre d'autre service en marche dont Nginx, Headscale, Adguard.."
+    },
+    "web": {
+      "title": "Réalisation d'un site web",
+      "desc": "Premier projet réalisé en programmation dans le web, j'ai ainsi créé une page dédiée à l'apprentissage des différentes recettes de galettes proposées par l'entreprise Crep'Eat. Mais aussi une page contenant le jeu Wordle. J'ai ainsi pu apprendre comment mettre en place un site web et à réaliser divers jeux en utilisant le Javascript."
+    },
+    "lidarts": {
+      "title": "Lidarts - Logiciel de partie de fléchettes",
+      "desc": "Étant fan de fléchettes, j'ai utilisé des applications pour réaliser des parties chez moi, entre amis. J'ai toujours trouvé que ces applications manquaient de nouveauté par rapport au logiciel que nous pouvons retrouver dans les salles de fléchettes. C'est pour cela que je me suis lancé dans la création de ma propre version de ce type de logiciel en utilisant Godot. Nommé Lidarts d'après Lichess et leur philosophie de l'open source et du crowdfunding. <br> Projet en cours de réalisation."
+    },
+    "portfolio": {
+      "title": "Réalisation de ce portfolio",
+      "desc": "J'ai pu me replonger dans la création d'un site web avec la création de mon portfolio virtuel. Grâce à cette réalisation j'ai pu apprendre l'utilisation du SASS, l'implémentation de fichiers SVG de façon compacte, l'ajout de design responsive et d'accessibilité et l'ajout de traduction de page avec i18n."
+    }
+  },
+  "other": {
+    "title": "Autre",
+    "menuiserie": {
+      "title": "Menuiserie",
+      "desc": "J'aime bien réaliser divers projets manuels dans mon temps personnel. J'ai ainsi réalisé deux meubles pour mon appartement. Le premier fut un meuble de salon créé à base de caisse de vin et d'un plan de travail. Mon deuxième fut de réaliser une armoire murale afin de ranger et cacher mon set de jeu de fléchettes. Ces divers projets m'ont permis d'apprendre comment concevoir un meuble en utilisant SketchUp, prévoir les outils et divers matériaux nécessaires et d'apprendre de nouvelles techniques dans la menuiserie."
+    }
+  },
+  "end": {
+    "title": "Merci",
+    "subtitle": "Collaborons ensemble"
+  },
+  "footer": {
+    "text": "Inspiré par Anurag Hazra, réalisé par <a href=\"https://linkedin.com/in/gr%C3%A9goirecollot\" target=\"_blank\"><b>Collot Grégoire</b></a>"
+  }
+}
