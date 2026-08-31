@@ -31,11 +31,11 @@
     },
     "second": {
       "title": "BackEnd",
-      "desc": "La partie cachée d'un programme est ce qui me passionne le plus. Une fois plongé dans la mise en place d'un programme, je ne vois plus le temps passer."
+      "desc": "What interests me most is the hidden inner workings of software. Once I dive into a project, I completely lose track of time."
     },
     "third": {
       "title": "SQL",
-      "desc": "J'ai découvert les bases de données avec mon BUT et cela m'a permis de me rendre compte que leur conception est très satisfaisante."
+      "desc": "I discovered database management during my computer science classes. It caught my attention right away, and I now really enjoy using SQL in my work."
     }
   },
   "about": {
