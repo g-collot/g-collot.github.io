@@ -1,100 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title data-i18n="meta.pageTitle">Collot Grégoire - Portfolio</title>
-		<script>
-			(function () {
-				const saved = localStorage.getItem('theme');
-				const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-				document.documentElement.setAttribute('data-theme', theme);
-			})();
-		</script>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
-			rel="stylesheet" />
-		<link rel="icon" type="image/x-icon" href="res/favicon/favicon-96x96.png" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-			rel="stylesheet" />
-		<link rel="preload" href="res/svg/icons.svg" as="image" />
-	</head>
-	<body>
-		<svg style="width: 0; height: 0; position: absolute" aria-hidden="true" focusable="false">
-			<linearGradient id="gradient-svg" gradientTransform="rotate(210, 0.5, 0.5)">
-				<stop offset="25%" stop-color="var(--color01)" />
-				<stop offset="100%" stop-color="var(--color01-alt)" />
-			</linearGradient>
-		</svg>
-		<header>
-			<div class="navbar-box">
-				<div class="navbar">
-					<div class="navbar-left">
-						<img src="res/favicon/favicon-96x96.png" alt="logo" width="35" height="35" />
-						<a href="#home" data-i18n="nav.home">home</a>
-						<a href="#about" data-i18n="nav.about">à propos</a>
-						<a href="#work" data-i18n="nav.work">projets</a>
-						<!-- <a href="#studies">universitaire</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title data-i18n="meta.pageTitle">Collot Grégoire - Portfolio</title>
+	<script>
+		(function () {
+			const saved = localStorage.getItem('theme');
+			const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.setAttribute('data-theme', theme);
+		})();
+	</script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="res/favicon/favicon-96x96.png" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+		rel="stylesheet" />
+	<link rel="preload" href="res/svg/icons.svg" as="image" />
+</head>
+
+<body>
+	<svg style="width: 0; height: 0; position: absolute" aria-hidden="true" focusable="false">
+		<linearGradient id="gradient-svg" gradientTransform="rotate(210, 0.5, 0.5)">
+			<stop offset="25%" stop-color="var(--color01)" />
+			<stop offset="100%" stop-color="var(--color01-alt)" />
+		</linearGradient>
+	</svg>
+	<header>
+		<div class="navbar-box">
+			<div class="navbar">
+				<div class="navbar-left">
+					<img src="res/favicon/favicon-96x96.png" alt="" width="35" height="35" />
+					<a href="#home" data-i18n="nav.home">home</a>
+					<a href="#about" data-i18n="nav.about">à propos</a>
+					<a href="#work" data-i18n="nav.work">projets</a>
+					<!-- <a href="#studies">universitaire</a>
 									<a href="#other">autre</a>
 									<a href="index.html#contact">contact</a> -->
-				
-					</div>
-					
-					<div class="navbar-right">
-						<button id="lang-toggle" type="button" onclick="toggleLang()">
-							<p data-i18n="nav.langToggle">en</p>
-						</button>
 
-						<button id="theme-toggle" type="button" 
-							data-i18n="[aria-label]nav.themeToggleAria"
-							aria-label="Basculer le thème clair/sombre">
-							<svg aria-hidden="true" focusable="false">
-								<use xlink:href="res/svg/icons.svg#saturn-color"></use>
-							</svg>
-						</button>
-						
-					</div>
+				</div>
+
+				<div class="navbar-right">
+					<button id="lang-toggle" type="button" onclick="toggleLang()">
+						<p data-i18n="nav.langToggle">en</p>
+					</button>
+
+					<button id="theme-toggle" type="button" data-i18n="[aria-label]nav.themeToggleAria"
+						aria-label="Basculer le thème clair/sombre">
+						<svg aria-hidden="true" focusable="false">
+							<use xlink:href="res/svg/icons.svg#saturn-color"></use>
+						</svg>
+					</button>
+
 				</div>
 			</div>
-		</header>
-
+		</div>
+	</header>
+	<main>
 		<section id="home">
 			<svg xml:space="preserve" aria-hidden="true" class="home-imgBG" viewBox="0 0 400 700">
-				<path d="m429.7-8.7-.2-.2c-.7-.6-1.4-1.1-2.2-1.4-.1 0-.2-.1-.3-.2h-.2c-.9-.3-1.8-.5-2.7-.5h-.6c-.3 0-.6 0-.9.1l-339.4 68c-3.2.6-5.6 3.1-6.3 6.3L9 402.7c0 .3-.1.6-.1.9v.6c0 .9.2 1.8.5 2.7v.2c0 .1.1.2.2.3.3.8.8 1.6 1.4 2.2l.2.2.1.1 226.3 226.3c.1.1.2.1.3.2.4.4.8.7 1.3 1l.6.3c.4.2.8.4 1.3.5l.1.1c.2.1.4 0 .6.1.4.1.8.1 1.2.2.3 0 .6 0 .9-.1.3 0 .6 0 .9-.1l339.4-67.9.9-.3c.3-.1.6-.2.8-.3 1.7-.8 3.1-2.2 3.9-3.9.1-.3.2-.5.3-.8l.3-.9 67.9-339.4c0-.6.1-1.2.1-1.7 0-.4-.1-.8-.2-1.2 0-.2 0-.4-.1-.7l-.1-.1c-.1-.4-.3-.8-.5-1.2l-.3-.6c-.2-.3-.5-.7-.7-1-.2-.2-.3-.4-.5-.7z"/>
+				<path
+					d="m429.7-8.7-.2-.2c-.7-.6-1.4-1.1-2.2-1.4-.1 0-.2-.1-.3-.2h-.2c-.9-.3-1.8-.5-2.7-.5h-.6c-.3 0-.6 0-.9.1l-339.4 68c-3.2.6-5.6 3.1-6.3 6.3L9 402.7c0 .3-.1.6-.1.9v.6c0 .9.2 1.8.5 2.7v.2c0 .1.1.2.2.3.3.8.8 1.6 1.4 2.2l.2.2.1.1 226.3 226.3c.1.1.2.1.3.2.4.4.8.7 1.3 1l.6.3c.4.2.8.4 1.3.5l.1.1c.2.1.4 0 .6.1.4.1.8.1 1.2.2.3 0 .6 0 .9-.1.3 0 .6 0 .9-.1l339.4-67.9.9-.3c.3-.1.6-.2.8-.3 1.7-.8 3.1-2.2 3.9-3.9.1-.3.2-.5.3-.8l.3-.9 67.9-339.4c0-.6.1-1.2.1-1.7 0-.4-.1-.8-.2-1.2 0-.2 0-.4-.1-.7l-.1-.1c-.1-.4-.3-.8-.5-1.2l-.3-.6c-.2-.3-.5-.7-.7-1-.2-.2-.3-.4-.5-.7z" />
 			</svg>
 			<div class="home-info">
-				<h5 data-i18n="home.greeting">Bonjour, je suis</h5>
-				<h1 data-i18n="home.name">COLLOT GRÉGOIRE</h1>
-				<h6 data-i18n="home.role">ÉTUDIANT EN BUT INFORMATIQUE</h6>
+				<p id="greeting" data-i18n="home.greeting">Bonjour, je suis</p>
+				<h1 data-i18n="home.name">Collot Grégoire</h1>
+				<p id="role" data-i18n="home.role">Étudiant en BUT Informatique</p>
 				<div class="home-infoPanel">
-					<a href="res/files/COLLOT_Gregoire_CV.pdf" target="_blank" download style="flex-grow: 2">
-						<button class="button-24" type="button"><h4 data-i18n="home.cvButton">Télécharger C.V.</h4></button>
-					</a>
+					<a href="res/files/COLLOT_Gregoire_CV.pdf" download class="button-24" style="flex-grow: 2"
+						data-i18n="home.cvButton">Télécharger C.V.</a>
 					<div class="home-infoLink">
 						<a href="https://www.github.com/duschmolll" target="_blank">
-							<svg
-								width="30px"
-								height="30px"
-								fill="var(--color01)"
-								aria-hidden="true"
-								focusable="false">
+							<svg width="30px" height="30px" fill="var(--color01)" aria-hidden="true" focusable="false">
 								<use xlink:href="res/svg/icons.svg#github-custom"></use>
 							</svg>
 						</a>
 						<a href="https://linkedin.com/in/gr%C3%A9goirecollot" target="_blank">
-							<svg
-								width="30px"
-								height="30px"
-								fill="var(--color01)"
-								aria-hidden="true"
-								focusable="false">
+							<svg width="30px" height="30px" fill="var(--color01)" aria-hidden="true" focusable="false">
 								<use xlink:href="res/svg/icons.svg#linkedin-custom"></use>
 							</svg>
 						</a>
@@ -112,7 +101,7 @@
 		</section>
 
 		<section id="like">
-			<h3 data-i18n="like.title">Ce que j'aime</h3>
+			<h2 data-i18n="like.title">Ce que j'aime</h2>
 			<div class="like-main">
 				<div class="like-container">
 					<svg class="like-img" fill="url(#gradient-svg)" aria-hidden="true" focusable="false">
@@ -149,7 +138,7 @@
 		</section>
 
 		<section id="about">
-			<h3 data-i18n="about.title">À propos</h3>
+			<h2 data-i18n="about.title">À propos</h2>
 			<div class="about-bg"></div>
 			<div class="about-container">
 				<div class="about-img-container">
@@ -162,13 +151,15 @@
 						sujets niches et continuer à explorer ces connaissances.
 						<br /><br />
 						De plus, en tant que gestionnaire applicatifs auprès de l'Université de Lille, j'ai pu
-						accroite mes connaissances techniques de façon très diverses. A travers mes deux ans, j'ai pu découvrir
-						le monde du travail en informatique dont la maintenance applicatives, le développement et l'éveolution suite 
+						accroite mes connaissances techniques de façon très diverses. A travers mes deux ans, j'ai pu
+						découvrir
+						le monde du travail en informatique dont la maintenance applicatives, le développement et
+						l'éveolution suite
 						a des demandes clients mais aussi la mise en ligne de services.
 						<br /><br />
 						Actuellement en troisième année d’études supérieures à l'IUT de Maubeuge en BUT
 						Informatique, je suis à la recherche d'une entreprise afin de réaliser mes trois années
-						en Ingénieur spécialité Informatique et Cybersécurité auprès de l'INSA de Valenciennes. 
+						en Ingénieur spécialité Informatique et Cybersécurité auprès de l'INSA de Valenciennes.
 						Passionné par le monde Informatique depuis mon plus jeune âge, cette formation me
 						permettrait de réaliser un objectif primordial pour ma vie professionnelle.
 					</p>
@@ -177,21 +168,30 @@
 		</section>
 
 		<section id="work">
-			<h3 data-i18n="work.title">Professionnel</h3>
+			<h2 data-i18n="work.title">Professionnel</h2>
 
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="work.opi.title">Moteur OPI</h2>
+						<h3 data-i18n="work.opi.title">Moteur OPI</h3>
 						<p data-i18n="work.opi.desc">
-							Le moteur aux Opérations Préalable à l’Inscription, est une clé maîtresse au bon déroulement des inscriptions pour
-							les étudiants auprès de l’Université de Lille. Ce moteur permet de récupérer tous les étudiants et vœux venant de
-							70 sources différentes (Parcoursup, eCandidat, monMaster, …), de les centraliser et de réaliser des transformations
+							Le moteur aux Opérations Préalable à l’Inscription, est une clé maîtresse au bon déroulement
+							des
+							inscriptions pour
+							les étudiants auprès de l’Université de Lille. Ce moteur permet de récupérer tous les
+							étudiants
+							et vœux venant de
+							70 sources différentes (Parcoursup, eCandidat, monMaster, …), de les centraliser et de
+							réaliser
+							des transformations
 							afin de les envoyer dans Apogée une fois conformes.
 							<br>
 							<br>
-							Nous avons mis en place : un CI/CD, une base de données Oracle avec avec des triggers et des procédures stockés,
-							système de migration, utilisation de Vault, developper et maintenir la partie PHP, mise en place et utilisations de web services.
+							Nous avons mis en place : un CI/CD, une base de données Oracle avec avec des triggers et des
+							procédures stockés,
+							système de migration, utilisation de Vault, developper et maintenir la partie PHP, mise en
+							place
+							et utilisations de web services.
 						</p>
 					</div>
 				</div>
@@ -218,16 +218,19 @@
 		</section>
 
 		<section id="studies">
-			<h3 data-i18n="studies.title">Universitaire</h3>
+			<h2 data-i18n="studies.title">Universitaire</h2>
 
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="studies.absence.title">Gestionnaire d'absence</h2>
+						<h3 data-i18n="studies.absence.title">Gestionnaire d'absence</h3>
 						<p data-i18n="studies.absence.desc">
-							Le but de ce projet est de réaliser un service web de gestion d'absence pour les établissements scolaire.
+							Le but de ce projet est de réaliser un service web de gestion d'absence pour les
+							établissements
+							scolaire.
 							Il faut mettre en place la gestion pour 4 rôles : secrétaire, enseignant, étudiant et
-							responsable pédagogique. Un historique détaillés, des informations précises, des statistiques
+							responsable pédagogique. Un historique détaillés, des informations précises, des
+							statistiques
 							et des rappels par mail automatique ont été intégrés.
 						</p>
 					</div>
@@ -262,7 +265,7 @@
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="studies.algo.title">Comparaison d'approches algorithmiques</h2>
+						<h3 data-i18n="studies.algo.title">Comparaison d'approches algorithmiques</h3>
 						<p data-i18n="studies.algo.desc">
 							Dans ce projet, nous devions réaliser une méthode comparative afin de démontrer
 							laquelle de nos implémentations algorithmiques fut la plus performante. Nous nous
@@ -286,24 +289,23 @@
 		</section>
 
 		<section id="project">
-			<h3 data-i18n="project.title">Personnel</h3>
+			<h2 data-i18n="project.title">Personnel</h2>
 
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="project.proxmox.title">Hébergement de service - Proxmox</h2>
+						<h3 data-i18n="project.proxmox.title">Hébergement de service - Proxmox</h3>
 						<p data-i18n="project.proxmox.desc">
-							Souhaitant mettre en place de la domotique, j'ai regardé pour une solution d'herbegement local.
-							J'ai mis en place un serveur Proxmox afin d'utiliser Home Assistant. Suite à la découverte du fonctionnement
+							Souhaitant mettre en place de la domotique, j'ai regardé pour une solution d'herbegement
+							local.
+							J'ai mis en place un serveur Proxmox afin d'utiliser Home Assistant. Suite à la découverte
+							du
+							fonctionnement
 							de l'hebergement, j'ai pu mettre d'autre service en marche dont Nginx, Headscale, Adguard..
 						</p>
 						<div class="project-text-button">
-							<a
-								href="https://github.com/Duschmolll/Duschmoll"
-								target="_blank"
-								style="flex-grow: 2">
-								<button class="button-24" type="button"><h4>Github</h4></button>
-							</a>
+							<a href="https://github.com/Duschmolll/liDarts" target="_blank" rel="noopener noreferrer"
+								class="button-24" style="flex-grow: 2">Github</a>
 						</div>
 					</div>
 				</div>
@@ -328,7 +330,7 @@
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="project.web.title">Réalisation d'un site web</h2>
+						<h3 data-i18n="project.web.title">Réalisation d'un site web</h3>
 						<p data-i18n="project.web.desc">
 							Premier projet réalisé en programmation dans le web, j’ai ainsi créé une page dédiée à
 							l’apprentissage des différentes recettes de galettes proposées par l’entreprise
@@ -336,12 +338,8 @@
 							mettre en place un site web et à réaliser divers jeux en utilisant le Javascript.
 						</p>
 						<div class="project-text-button">
-							<a
-								href="https://github.com/Duschmolll/Duschmoll"
-								target="_blank"
-								style="flex-grow: 2">
-								<button class="button-24" type="button"><h4>Github</h4></button>
-							</a>
+							<a href="https://github.com/Duschmolll/" target="_blank" rel="noopener noreferrer"
+								class="button-24" style="flex-grow: 2">Github</a>
 						</div>
 					</div>
 				</div>
@@ -366,7 +364,7 @@
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="project.lidarts.title">LiDarts - Logiciel de partie de fléchettes.</h2>
+						<h3 data-i18n="project.lidarts.title">LiDarts - Logiciel de partie de fléchettes.</h3>
 						<p data-i18n="project.lidarts.desc">
 							Étant fan de fléchettes, j'ai utilisé des applications pour réaliser des parties chez
 							moi, entre amis. J'ai toujours trouvé que ces applications manquaient de nouveauté par
@@ -376,9 +374,8 @@
 							types de mode de jeu. Projet en cours de réalisation.
 						</p>
 						<div class="project-text-button">
-							<a href="https://github.com/Duschmolll/liDarts" target="_blank" style="flex-grow: 2">
-								<button class="button-24" type="button"><h4>Github</h4></button>
-							</a>
+							<a href="https://github.com/Duschmolll/liDarts" target="_blank" rel="noopener noreferrer"
+								class="button-24" style="flex-grow: 2">Github</a>
 						</div>
 					</div>
 				</div>
@@ -397,19 +394,15 @@
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="project.portfolio.title">Réalisation de ce portfolio</h2>
+						<h3 data-i18n="project.portfolio.title">Réalisation de ce portfolio</h3>
 						<p data-i18n="project.portfolio.desc">
 							J'ai pu me replonger dans la création d'un site web avec la création de mon portfolio
 							virtuel. Grâce à cette réalisation j'ai pu apprendre l'utilisation du SASS et
 							l'implémentation de fichiers SVG.
 						</p>
 						<div class="project-text-button">
-							<a
-								href="https://github.com/g-collot/g-collot.github.io"
-								target="_blank"
-								style="flex-grow: 2">
-								<button class="button-24" type="button"><h4>Github</h4></button>
-							</a>
+							<a href="https://github.com/g-collot/g-collot.github.io" target="_blank"
+								rel="noopener noreferrer" class="button-24" style="flex-grow: 2">Github</a>
 						</div>
 					</div>
 				</div>
@@ -433,11 +426,11 @@
 		</section>
 
 		<section id="other">
-			<h3 data-i18n="other.title">Autre</h3>
+			<h2 data-i18n="other.title">Autre</h2>
 			<article class="project-article">
 				<div class="project-text">
 					<div class="project-text-container">
-						<h2 data-i18n="other.menuiserie.title">Menuiserie</h2>
+						<h3 data-i18n="other.menuiserie.title">Menuiserie</h3>
 						<p data-i18n="other.menuiserie.desc">
 							J'aime bien réaliser divers projets manuels dans mon temps personnel. J'ai ainsi
 							réalisé deux meubles pour mon appartement. Le premier fut un meuble de salon créé à
@@ -463,25 +456,26 @@
 					<use xlink:href="res/svg/icons.svg#handshake-custom"></use>
 				</svg>
 				<h2 data-i18n="end.title">Merci</h2>
-				<h5 data-i18n="end.subtitle">Collaborons ensemble</h5>
+				<p data-i18n="end.subtitle">Collaborons ensemble</p>
 			</div>
 		</section>
+	</main>
 
-		<footer>
-			<div class="footer-container">
-				<img src="res/favicon/favicon-96x96.png" alt="logo" width="35" height="35" />
-				<p data-i18n="footer.text">
-					Inspiré par Anurag Hazra, réalisé par
-					<a href="https://linkedin.com/in/gr%C3%A9goirecollot" target="_blank"
-						><b>Collot Grégoire</b></a
-					>
-				</p>
-			</div>
-		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/i18next@23.16.8/i18next.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.7.1/i18nextHttpBackend.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@8.0.2/i18nextBrowserLanguageDetector.min.js"></script>
-		<script src="scripts/i18n-init.js"></script>
-		<script src="scripts/theme-toggle.js"></script>
-	</body>
+	<footer>
+		<div class="footer-container">
+			<img src="res/favicon/favicon-96x96.png" alt="" width="35" height="35" />
+			<p data-i18n="footer.text">
+				Inspiré par Anurag Hazra, réalisé par
+				<a href="https://linkedin.com/in/gr%C3%A9goirecollot" target="_blank"><b>Collot Grégoire</b></a>
+			</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/i18next@23.16.8/i18next.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.7.1/i18nextHttpBackend.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@8.0.2/i18nextBrowserLanguageDetector.min.js"></script>
+	<script src="scripts/i18n-init.js"></script>
+	<script src="scripts/theme-toggle.js"></script>
+</body>
+
 </html>

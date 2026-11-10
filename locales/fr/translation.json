@@ -11,8 +11,8 @@
   },
   "home": {
     "greeting": "Bonjour, je suis",
-    "name": "COLLOT GRÉGOIRE",
-    "role": "ÉTUDIANT EN BUT INFORMATIQUE",
+    "name": "Collot Grégoire",
+    "role": "Étudiant en BUT Informatique",
     "cvButton": "Télécharger C.V.",
     "code": {
       "line1": "1&ensp;class <b>Personne</b>:",
